@@ -1,0 +1,138 @@
+:root{
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --VerydarkDesaturatedBlue: hsl(229, 23%, 23%);
+  --DarkGrayishBlue: hsl(227, 10%, 46%);
+  --DarkGray: hsl(0, 0%, 59%);
+}
+
+body{
+  font-family: 'Kumbh Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--Dark-cyan);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 0 18px;
+}
+
+.card{
+  border-radius: 18px;
+  min-width: 17em;
+  height: 25em;
+  box-shadow: 1px 30px 85px 0px rgba(0, 0, 0, 0.253);
+  background-color: white;
+}
+
+.card__image-container{
+  width: 100%;
+  height: 9em;
+  object-fit: cover;
+}
+
+.card__image-container img{
+  border-radius: 18px 18px 0 0 ;
+  width: 100%;
+  height: 100%;
+}
+
+.card__image-user{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -2em;
+}
+
+.card__image-user img{
+  border-radius: 50%;
+  border: 6px solid white;
+}
+
+.user__info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p{
+  margin: 0;
+}
+
+.user__info-wrapper{
+  width: 8.5em;
+  margin-top: 14px;
+  display: inherit;
+  justify-content: space-around;
+  align-items: end;
+}
+
+.user__name{
+  color: var(--VerydarkDesaturatedBlue);
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.age, .place{
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--DarkGray);
+}
+
+.place{
+  font-size: 16px;
+  color: var(--DarkGray);
+}
+
+.socialmedia{
+  border-top: 1px solid rgb(202, 202, 202);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 22px;
+  width: 100%;
+  height: 6em;
+}
+
+.socialmedia__content{
+  display: grid;
+  text-align: center;
+}
+
+.socialmedia__content h3{
+  margin: 0 0 12px;
+  color: var(--VerydarkDesaturatedBlue);
+}
+
+.socialmedia__content p{
+  font-size: 12px;
+  color: var(--DarkGray);
+}
+
+  .top__bg {
+    position: fixed;
+    top: -620px;
+    left: -700px;
+    z-index: -1;
+  }
+  
+  .bottom__bg{
+    z-index: -1;
+    position: fixed;
+    bottom: -580px;
+    right: -700px;
+  }
+
+  @media screen and (min-width: 780px){
+    .top__bg{
+      position: fixed;
+      top: -400px;
+      left: -310px;
+    }
+    
+    .bottom__bg{
+      position: fixed;
+      bottom: -560px;
+      right: -200px;
+  }
+}
